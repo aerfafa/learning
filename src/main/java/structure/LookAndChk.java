@@ -47,14 +47,22 @@ List<String> linkedList = new ArrayList<String>();
         System.out.println(Collections.binarySearch(linkedList,"2"));
 
         String ss[] = {"1","2"};
-        List<String> strings =new ArrayList<>(Arrays.asList(ss)) ;
-        strings.add("3");
-        strings.sort(new Comparator<String>() {
+        List<String> tArr =new ArrayList<>(Arrays.asList(ss)) ;
+
+        tArr.add("3");
+        tArr.add("3");
+        tArr.add("3");
+        tArr.sort(new Comparator<String>() {
             public int compare(String o1, String o2) {
                 return o2.compareTo(o1);
             }
         });
-        System.out.println(strings.toString());
+
+        System.out.println(tArr.toString());
+
+        HashSet set = new HashSet(tArr);
+        System.out.println(set.toString());
+
 
 
 

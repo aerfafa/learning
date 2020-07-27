@@ -56,7 +56,6 @@ public class TestCollect {
         }
         toPrintln("-----------map.entrySet------end------");
 
-
         ArrayList<Map.Entry<String, String>> entries = new ArrayList<>(itemMap.entrySet());
 
         Collections.sort(entries, new Comparator<Map.Entry<String, String>>() {
@@ -71,6 +70,7 @@ public class TestCollect {
             toPrintln(entry.getKey()+" ："+entry.getKey());
         }
         toPrintln("-----------map.compareBykey------end------");
+
     }
 
 

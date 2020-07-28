@@ -1,4 +1,5 @@
 package se.multythread;
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,7 +10,9 @@ import java.util.concurrent.Executors;
  * @version 1.0
  */
 public class MultThreadDemo {
+
     public static void main(String[] args) throws InterruptedException {
+
         long start = System.currentTimeMillis();
 
         int jobs = 10;//假设一个任务需要10个job
@@ -33,6 +36,7 @@ public class MultThreadDemo {
 
         long end = System.currentTimeMillis();
         System.out.println(">>>>>>>>任务总耗时"+(end-start)+"ms");
+
     }
 
 }

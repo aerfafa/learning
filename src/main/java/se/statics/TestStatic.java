@@ -1,5 +1,8 @@
 package se.statics;
 
+/**
+ *  测试构造方法、static代码块 执行顺序
+ */
 public class TestStatic {
 
     static {

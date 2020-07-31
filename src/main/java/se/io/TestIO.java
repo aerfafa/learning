@@ -22,12 +22,10 @@ public class TestIO {
         writer.append("中文输入");
         // 写入到缓冲区
         writer.append("\r\n");
-
         // 换行
         writer.append("English");
         // 刷新缓存冲,写入到文件,如果下面已经没有写入的内容了,直接close也会写入
-//        writer.flush();
-        writer.close();
+        writer.close(); //writer.flush();
         // 关闭写入流,同时会把缓冲区内容写入文件,所以上面的注释掉
         fop.close();
         // 关闭输出流,释放系统资源
@@ -37,12 +35,10 @@ public class TestIO {
 
 
         File f = new File("C:\\Users\\12345\\Desktop\\1.txt");
-                FileInputStream fip = new FileInputStream(f);
+        FileInputStream fip = new FileInputStream(f);
         // 构建FileInputStream对象
-
         InputStreamReader reader = new InputStreamReader(fip, "UTF-8");
         // 构建InputStreamReader对象,编码与写入相同
-
         StringBuffer sb = new StringBuffer();
         while (reader.ready()) {
             sb.append((char) reader.read());
@@ -51,9 +47,8 @@ public class TestIO {
         System.out.println(sb.toString());
         reader.close();
         // 关闭读取流
-
         fip.close();
-//         关闭输入流,释放系统资源
+//     关闭输入流,释放系统资源
 
     }
 

@@ -43,7 +43,7 @@ List<String> linkedList = new ArrayList<String>();
 //                hashMap.values()) {
 //            System.out.println(item);
 //        }
-        
+
         System.out.println(Collections.binarySearch(linkedList,"2"));
 
         String ss[] = {"1","2"};

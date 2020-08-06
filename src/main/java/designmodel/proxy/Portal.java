@@ -6,5 +6,11 @@ package designmodel.proxy;
  * @Date 2020-07-31  9:53
  */
 public interface Portal {
+
+
     void sendGoods();
+
+
+
+
 }
